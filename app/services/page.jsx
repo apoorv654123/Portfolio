@@ -7,28 +7,28 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Development",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    href: "",
+    title: "Fullstack Web Development",
+    description: "Engineered dynamic web apps using the MERN stack. Integrated real-time features with Socket.io and robust authentication using JWT. Deployed apps with modern DevOps tools.",
+    href: "/work",
   },
-  {
-    num: "02",
-    title: "Mobile App Development",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "UI/UX Design",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "Game Development",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    href: "",
-  },
+  // {
+  //   num: "02",
+  //   title: "Mobile App Development",
+  //   description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+  //   href: "",
+  // },
+  // {
+  //   num: "03",
+  //   title: "UI/UX Design",
+  //   description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+  //   href: "",
+  // },
+  // {
+  //   num: "04",
+  //   title: "Game Development",
+  //   description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+  //   href: "",
+  // },
 ];
 
 const Services = () => {

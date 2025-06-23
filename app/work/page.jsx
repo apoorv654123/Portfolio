@@ -20,13 +20,13 @@ import { motion } from "framer-motion";
 const projects = [
   {
     num: "01",
-    category: "Frontend",
-    title: "project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
+    category: "FullStack",
+    title: "Chatty",
+    description: "Designed and developed Chatty, a Real-Time chat application using the MERN stack, integrating Socket.IO for instant messaging and leveraging Gemini AI to assist users in Composing and Editing messages. Implemented Secure Authentication, Online presence detection, Theme switching, and Dynamic profile management for a seamless user experience.",
+    stack: [{ name: "React" }, { name: "Nodejs" }, { name: "Express" }, { name: "MongoDB" }, {name: "Gemini AI"}, {name: "Cloudinary"}, {name: "Socket.io"}, {name: "JWT"}, {name: "Tailwind.css"}],
     image: "/assets/work/thumb1.png",
     live: "",
-    github: "",
+    github: "https://github.com/apoorv654123/Chatty",
   },
   {
     num: "02",
@@ -78,7 +78,7 @@ const Work = () => {
                 {project.category} project
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-4">
                 {project.stack.map((item, index) => {
                   return (
                     <li

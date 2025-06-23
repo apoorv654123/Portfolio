@@ -5,15 +5,15 @@ import Link from "next/link";
 const socials = [
     {
         icon: <FaGithub />,
-        path: ""
+        path: "https://github.com/apoorv654123"
     },
     {
         icon: <FaLinkedinIn />,
-        path: ""
+        path: "https://www.linkedin.com/in/apoorv654123/"
     },
     {
         icon: <FaTwitter />,
-        path: ""
+        path: "https://x.com/Apoorv654123"
     },
 ];
 

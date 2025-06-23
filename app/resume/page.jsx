@@ -1,9 +1,14 @@
 "use client";
 
-import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaCss3, FaGitAlt, FaHtml5, FaJava, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import {
+  SiCplusplus,
+  SiExpress,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
+  SiPostgresql,
+  SiPython,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -54,34 +59,34 @@ const about = {
   ],
 };
 
-const experience = {
-  icon: "/assets/resume/badge.svg",
-  title: "My Experience",
-  description:
-    "I have worked on various projects that have helped me grow as a developer.",
-  items: [
-    {
-      company: "Tech Solutions",
-      position: "Full Stack Developer",
-      duration: "Jan 2022 - Present",
-    },
-    {
-      company: "Web Innovations",
-      position: "Front End Developer",
-      duration: "Jun 2020 - Dec 2021",
-    },
-    {
-      company: "E-commerce Inc.",
-      position: "Back End Developer",
-      duration: "Jan 2019 - May 2020",
-    },
-    {
-      company: "Startup Hub",
-      position: "Intern",
-      duration: "Jun 2018 - Dec 2018",
-    },
-  ],
-};
+// const experience = {
+//   icon: "/assets/resume/badge.svg",
+//   title: "My Experience",
+//   description:
+//     "I have worked on various projects that have helped me grow as a developer.",
+//   items: [
+//     {
+//       company: "Tech Solutions",
+//       position: "Full Stack Developer",
+//       duration: "Jan 2022 - Present",
+//     },
+//     {
+//       company: "Web Innovations",
+//       position: "Front End Developer",
+//       duration: "Jun 2020 - Dec 2021",
+//     },
+//     {
+//       company: "E-commerce Inc.",
+//       position: "Back End Developer",
+//       duration: "Jan 2019 - May 2020",
+//     },
+//     {
+//       company: "Startup Hub",
+//       position: "Intern",
+//       duration: "Jun 2018 - Dec 2018",
+//     },
+//   ],
+// };
 
 const education = {
   icon: "/assets/resume/cap.svg",
@@ -148,6 +153,34 @@ const skills = {
       icon: <SiTailwindcss />,
       name: "Tailwind CSS",
     },
+    {
+      icon: <SiExpress />,
+      name: "Express.js",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+    },
+    {
+      icon: <SiCplusplus />,
+      name: "C++",
+    },
+    {
+      icon: <FaGitAlt />,
+      name: "Git",
+    },
+    {
+      icon: <FaJava />,
+      name: "Java",
+    },
+    {
+      icon: <SiPython />,
+      name: "Python",
+    },
   ],
 };
 
@@ -163,18 +196,18 @@ const Resume = () => {
     >
       <div className="container mx-auto">
         <Tabs
-          defaultValue="experience"
+          defaultValue="skills"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
+            {/* <TabsTrigger value="experience">Experience</TabsTrigger> */}
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
           <div className="min-h-[70vh] w-full">
-            <TabsContent value="experience" className="w-full">
+            {/* <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] mx-auto xl:mx-0 text-white/60">
@@ -202,7 +235,7 @@ const Resume = () => {
                   </ul>
                 </ScrollArea>
               </div>
-            </TabsContent>
+            </TabsContent> */}
 
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
