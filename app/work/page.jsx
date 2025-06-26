@@ -22,31 +22,78 @@ const projects = [
     num: "01",
     category: "FullStack",
     title: "Chatty",
-    description: "Designed and developed Chatty, a Real-Time chat application using the MERN stack, integrating Socket.IO for instant messaging and leveraging Gemini AI to assist users in Composing and Editing messages. Implemented Secure Authentication, Online presence detection, Theme switching, and Dynamic profile management for a seamless user experience.",
-    stack: [{ name: "React" }, { name: "Nodejs" }, { name: "Express" }, { name: "MongoDB" }, {name: "Gemini AI"}, {name: "Cloudinary"}, {name: "Socket.io"}, {name: "JWT"}, {name: "Tailwind.css"}],
-    image: "/assets/work/thumb1.png",
+    description:
+      "Designed and developed Chatty, a Real-Time chat application using the MERN stack, integrating Socket.IO for instant messaging and leveraging Gemini AI to assist users in Composing and Editing messages. Implemented Secure Authentication, Online presence detection, Theme switching, and Dynamic profile management for a seamless user experience.",
+    stack: [
+      { name: "React" },
+      { name: "Nodejs" },
+      { name: "Express" },
+      { name: "MongoDB" },
+      { name: "Gemini AI" },
+      { name: "Cloudinary" },
+      { name: "Socket.io" },
+      { name: "JWT" },
+      { name: "Tailwind.css" },
+    ],
+    image: "/assets/work/Chatty.png",
     live: "",
     github: "https://github.com/apoorv654123/Chatty",
   },
   {
     num: "02",
     category: "fullstack",
-    title: "project 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    title: "PassMAN",
+    description:
+      "Empower users to securely store, manage, and retrieve passwords with ease. Streamline credential organization, enable instant copying, and ensure data privacy through a responsive, intuitive interface.",
+    stack: [
+      { name: "React" },
+      { name: "Tailwind.css" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "CORS" },
+    ],
+    image: "/assets/work/PassMAN.png",
+    live: "https://www.linkedin.com/posts/apoorv654123_webdevelopment-frontend-backend-activity-7210656170364059648-1s9f?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
+    github: "https://github.com/apoorv654123/PassMan",
   },
   {
     num: "03",
+    category: "fullstack",
+    title: "BlogHERE",
+    description:
+      "Designed and implemented a full-stack blog application using React, Node.js, Express, and MongoDB. Enabled users to create, view, edit, and delete blog posts through an intuitive interface. Integrated RESTful APIs for seamless client-server communication and ensured responsive design for optimal user experience across devices.",
+    stack: [
+      { name: "React" },
+      { name: "CSS 3" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "CORS" },
+    ],
+    image: "/assets/work/BlogHere.png",
+    live: "https://www.linkedin.com/posts/apoorv654123_webdevelopment-frontend-backend-activity-7210664487589150721-ZRst?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
+    github: "https://github.com/apoorv654123/BlogApp",
+  },
+  {
+    num: "04",
     category: "frontend",
-    title: "project 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    title: "Snake Game",
+    description:"Developed a dynamic Snake game using HTML, CSS, and JavaScript. Engineered smooth keyboard controls, integrated real-time score tracking, and implemented engaging sound effects. Optimized for responsive design and interactive gameplay.",
+    stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
+    image: "/assets/work/SnakeGame.png",
+    live: "https://www.linkedin.com/posts/apoorv654123_webdevelopment-gamedev-html-activity-7210311910498402305-nE4j?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
+    github: "https://github.com/apoorv654123/SnakeGame",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "Weather App",
+    description:"Weather App empowers users to instantly retrieve real-time weather data by city name. Leveraging the OpenWeatherMap API, it dynamically displays temperature, weather conditions, wind speed, and humidity in a clean, responsive interface. Designed with React, the app streamlines user interaction and ensures a seamless experience across devices.",
+    stack: [{ name: "React" }, { name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
+    image: "/assets/work/WeatherApp.png",
+    live: "https://www.linkedin.com/posts/apoorv654123_webdevelopment-frontend-react-activity-7210352545767018496-7wC3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
+    github: "https://github.com/apoorv654123/WeatherApp",
   },
 ];
 
@@ -56,14 +103,14 @@ const Work = () => {
   const handleSlideChange = (swiper) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex]);
-   };
-  
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay:2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
@@ -81,21 +128,18 @@ const Work = () => {
               <ul className="flex flex-wrap gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li
-                      key={index}
-                      className="text-xl text-accent"
-                    >
+                    <li key={index} className="text-xl text-accent">
                       {item.name}
                       {index !== project.stack.length - 1 && ","}
                     </li>
                   );
                 })}
               </ul>
-              
+
               <div className="border border-white/20"></div>
-              
+
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] flex items-center justify-center bg-white/5 group rounded-full">
@@ -107,8 +151,8 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                
-                <Link href={project.github}>
+
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] flex items-center justify-center bg-white/5 group rounded-full">
@@ -134,7 +178,6 @@ const Work = () => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 
                       <div className="relative w-full h-full">
@@ -150,7 +193,7 @@ const Work = () => {
                 );
               })}
 
-              <WorkSliderBtns 
+              <WorkSliderBtns
                 containerStyles="absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 flex gap-2 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent w-[44px] h-[44px] flex items-center justify-center text-primary text-[22px] hover:bg-accent-hover transition-all"
               />
