@@ -36,7 +36,7 @@ const projects = [
       { name: "Tailwind.css" },
     ],
     image: "/assets/work/Chatty.png",
-    live: "",
+    live: "https://www.linkedin.com/posts/apoorv654123_mern-ai-react-activity-7344707039345954816--Nhv?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
     github: "https://github.com/apoorv654123/Chatty",
   },
   {
