@@ -1,6 +1,6 @@
 "use client";
 
-import { FaCss3, FaGitAlt, FaHtml5, FaJava, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaCss3, FaDocker, FaGitAlt, FaHtml5, FaJava, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiCplusplus,
   SiExpress,
@@ -9,6 +9,7 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiPython,
+  SiRedis,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -117,6 +118,14 @@ const skills = {
   description:
     "I have a diverse skill set that includes both front-end and back-end technologies.",
   items: [
+    {
+      icon: <SiRedis />,
+      name: "Redis",
+    },
+    {
+      icon: <FaDocker />,
+      name: "Docker",
+    },
     {
       icon: <FaHtml5 />,
       name: "HTML5",

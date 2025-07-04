@@ -60,6 +60,25 @@ const projects = [
   {
     num: "03",
     category: "fullstack",
+    title: "RaposStore",
+    description:
+      "RaposStore is a full-stack product inventory app that leverages React, Vite, Express, and NeonDB. I engineered robust rate-limiting and bot-detection using Arcjet and Helmet, ensuring security and reliability. The app empowers users to seamlessly manage products with a modern, responsive UI built with Tailwind CSS and DaisyUI.",
+    stack: [
+      { name: "PostgreSQL" },
+      { name: "Arcjet" },
+      { name: "Express.js" },
+      { name: "React" },
+      { name: "Tailwind CSS" },
+      { name: "Node.js" },
+      { name: "CORS" },
+    ],
+    image: "/assets/work/RaposStore.png",
+    live: "https://www.linkedin.com/posts/apoorv654123_react-nodejs-postgresql-activity-7346890071293181952-_Efz?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
+    github: "https://github.com/apoorv654123/RaposStore",
+  },
+  {
+    num: "04",
+    category: "fullstack",
     title: "BlogHERE",
     description:
       "Designed and implemented a full-stack blog application using React, Node.js, Express, and MongoDB. Enabled users to create, view, edit, and delete blog posts through an intuitive interface. Integrated RESTful APIs for seamless client-server communication and ensured responsive design for optimal user experience across devices.",
@@ -76,7 +95,7 @@ const projects = [
     github: "https://github.com/apoorv654123/BlogApp",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Snake Game",
     description:"Developed a dynamic Snake game using HTML, CSS, and JavaScript. Engineered smooth keyboard controls, integrated real-time score tracking, and implemented engaging sound effects. Optimized for responsive design and interactive gameplay.",
@@ -86,7 +105,7 @@ const projects = [
     github: "https://github.com/apoorv654123/SnakeGame",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Weather App",
     description:"Weather App empowers users to instantly retrieve real-time weather data by city name. Leveraging the OpenWeatherMap API, it dynamically displays temperature, weather conditions, wind speed, and humidity in a clean, responsive interface. Designed with React, the app streamlines user interaction and ensures a seamless experience across devices.",
