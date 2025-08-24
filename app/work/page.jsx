@@ -21,6 +21,25 @@ const projects = [
   {
     num: "01",
     category: "FullStack",
+    title: "Fitronix AI",
+    description:
+      "Fitronix AI is an intelligent fitness assistant that uses voice interaction and advanced AI to create personalized fitness and diet plans. It adapts in real time to user progress for a seamless and interactive experience. Fitronix AI combines cutting-edge AI technology with a user-friendly design to help users achieve their wellness goals smarter and faster.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Gemini AI" },
+      { name: "Vapi.ai" },
+      { name: "Convex" },
+      { name: "Clerk" },
+      { name: "Tailwind.css" },
+    ],
+    image: "/assets/work/FitronixAI.png",
+    live: "https://www.linkedin.com/posts/apoorv654123_ai-fitnesstech-nextjs-activity-7365379106210787329-bRtm?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
+    github: "https://github.com/apoorv654123/FitronixAI",
+  },
+  {
+    num: "02",
+    category: "FullStack",
     title: "Chatty",
     description:
       "Designed and developed Chatty, a Real-Time chat application using the MERN stack, integrating Socket.IO for instant messaging and leveraging Gemini AI to assist users in Composing and Editing messages. Implemented Secure Authentication, Online presence detection, Theme switching, and Dynamic profile management for a seamless user experience.",
@@ -40,7 +59,7 @@ const projects = [
     github: "https://github.com/apoorv654123/Chatty",
   },
   {
-    num: "02",
+    num: "03",
     category: "fullstack",
     title: "PassMAN",
     description:
@@ -58,7 +77,7 @@ const projects = [
     github: "https://github.com/apoorv654123/PassMan",
   },
   {
-    num: "03",
+    num: "04",
     category: "fullstack",
     title: "RaposStore",
     description:
@@ -77,7 +96,7 @@ const projects = [
     github: "https://github.com/apoorv654123/RaposStore",
   },
   {
-    num: "04",
+    num: "05",
     category: "fullstack",
     title: "BlogHERE",
     description:
@@ -95,21 +114,28 @@ const projects = [
     github: "https://github.com/apoorv654123/BlogApp",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Snake Game",
-    description:"Developed a dynamic Snake game using HTML, CSS, and JavaScript. Engineered smooth keyboard controls, integrated real-time score tracking, and implemented engaging sound effects. Optimized for responsive design and interactive gameplay.",
+    description:
+      "Developed a dynamic Snake game using HTML, CSS, and JavaScript. Engineered smooth keyboard controls, integrated real-time score tracking, and implemented engaging sound effects. Optimized for responsive design and interactive gameplay.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
     image: "/assets/work/SnakeGame.png",
     live: "https://www.linkedin.com/posts/apoorv654123_webdevelopment-gamedev-html-activity-7210311910498402305-nE4j?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
     github: "https://github.com/apoorv654123/SnakeGame",
   },
   {
-    num: "06",
+    num: "07",
     category: "frontend",
     title: "Weather App",
-    description:"Weather App empowers users to instantly retrieve real-time weather data by city name. Leveraging the OpenWeatherMap API, it dynamically displays temperature, weather conditions, wind speed, and humidity in a clean, responsive interface. Designed with React, the app streamlines user interaction and ensures a seamless experience across devices.",
-    stack: [{ name: "React" }, { name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
+    description:
+      "Weather App empowers users to instantly retrieve real-time weather data by city name. Leveraging the OpenWeatherMap API, it dynamically displays temperature, weather conditions, wind speed, and humidity in a clean, responsive interface. Designed with React, the app streamlines user interaction and ensures a seamless experience across devices.",
+    stack: [
+      { name: "React" },
+      { name: "HTML 5" },
+      { name: "CSS 3" },
+      { name: "Javascript" },
+    ],
     image: "/assets/work/WeatherApp.png",
     live: "https://www.linkedin.com/posts/apoorv654123_webdevelopment-frontend-react-activity-7210352545767018496-7wC3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfHruAB4KMlRbUrw8edoTEKLOkrzCTwe3o",
     github: "https://github.com/apoorv654123/WeatherApp",
